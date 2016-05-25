@@ -1,0 +1,30 @@
+.buscar{
+	margin-top: 40px;
+	font-size: 20px;
+}
+.buscar input{
+	padding: 3px 10px;
+	border-radius: 5px;
+}
+
+#tabla1{
+	margin-top: 35px;
+}
+.opcion{
+	background-color: #C2C2CB;
+	text-decoration: none;
+	color: #000;
+	padding: 8px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 8px 8px 8px #A4A4A4 inset;
+}
+.opcion img{
+	width: 20px;
+	margin-right: 10px;
+}
+
+.opcion:hover{
+	box-shadow: 5px 5px 5px #A4A4A4;
+}

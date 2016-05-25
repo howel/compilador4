@@ -9,9 +9,11 @@
 
 		<!-- CSS de Bootstrap -->
 	    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+	    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
 	    <script src="js/bootstrap.min.js"></script>
 	    <!-- Librería jQuery requerida por los plugins de JavaScript -->
 	    <script src="http://code.jquery.com/jquery.js"></script>
+	    <script src="js/Validaciones.js"></script>
 
 		<style>
 		b{color:blue;}
@@ -31,49 +33,50 @@
 	<body>
 		<div class="container" align="center">
 			<div class="row">
-					<div class="col-xs-4">
+					<div class="col-xs-2">
 						<br>
-					    <img src="img/fisi.jpg" width="220" height="220">
+					    <img src="img/unsm-t.jpg" width="180" height="180">
 					</div>
-					<div class="col-xs-4">
+					<div class="col-xs-8">
 						<br>
-						
-					    <h1>Universidad Nacional de San Martin</h1>
-					    <h2>Facultad De Ingenieria De Siatemas E Informatica</h2>
+					    <h1>   UNIVERSIDAD NACIONAL DE SAN MART&Iacute;N</h1>
+					    <h2>Facultad De Ingenier&iacute;a De Sistemas E Inform&aacute;tica</h2>
 					</div>
-					<div class="col-xs-4">
+					<div class="col-md-2">
 						<br>
-					    <img src="img/unsm-t.jpg" width="220" height="220">
+					    <img src="img/fisi.jpg" width="180" height="180">
 					</div>
 			</div>
-			<h1>COMPILADOR V.3.1.0</h1>
+			<h3>COMPILADOR V.3.1.0</h3>
 			
-			<div class="row" align="center">
-				<form name="form1" method="post">
+			<div class="row" align="center" width='700'>
+				<center><form name="form1" method="post">
+					<div class="col-xs-3"></div>
 					<div class="col-xs-2">
 					    <select class="form-control" >
 						  	<option value="nombre">Nombre</option>
-						  	<option value="dni">Dni</option>
+						  	
 						  	<!--
 						  	<option value="dni">Dni</option>
 						  	<option value="fecha">Fecha</option>
 						  	-->
 						</select>
 					</div>
-					<div class="col-xs-6">
-					    <input type="text" class="form-control" name="palabra" placeholder="Ingresar nombre" required/>
+					<div class="col-xs-3">
+					    <input type="text" class="form-control" name="palabra" onkeypress="return NumerosLetras(event)" placeholder="Ingresar nombre" required  
+					    maxlength="10"/>
 					</div>
 					<div class="col-xs-1">
 					    <input type="button" class="btn btn-primary" name="buscar" value="Buscar" onClick="buscarPalabras()" >
 					</div>
-				</form>
+				</form></center>
 			</div >
 			
 		</div>
 		<br />
 		<div class="container">
 			<div class="row">
-				<div id="resultado1" class="col-xs-9">
+				<div id="resultado1" class="col-xs-12">
 				
 				</div>
 				<!--

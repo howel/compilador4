@@ -1218,9 +1218,15 @@ h6 .small,
   color: #777;
 }
 h1,
-.h1,
+.h1 {
+  font-size: 36px;
+  color: #138316;
+}
 h2,
-.h2,
+.h2{
+  font-size: 30px;
+  color: #7B1383;
+}
 h3,
 .h3 {
   margin-top: 20px;

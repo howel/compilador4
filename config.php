@@ -50,37 +50,36 @@
 					//Resultados de PostgreSql
 					//--------------------------------------------------------------------------------
 					echo "
-					<table class='table table-hover'>
+					<table class='table table-hover'  width='700'>
+						<tr>
+							<td colspan='6'>
+								<img src='img/arcangel.jpg'>
+							</td>
+						</tr>
 
-					<tr>
-						<td colspan='6'>
-							<img src='img/arcangel.png' height='200'>
-						</td>
-					</tr>
+				      	<tr class='success' > 
+				      	    <th>Codigo</th> 
+				      	    <th>Nombre</th> 
+				      	    <th>Email</th> 
+					  	    <th>Dni</th>
+							<th>Telefono</th>
+					  	</tr>
+					  	<tr> 
+					  	  	<td>".$row['id_cliente']."</td> 
+					  	    <td>".$row['nombre']."</td> 
+					  	    <td>".$row['email']."</td>
+					  	    <td>".$row['dni']."</td> 
+					  	    <td>".$row['telefono']."</td> 
+					  	     
+					  	</tr>
 
-			      	<tr class='success' > 
-			      	    <th>Codigo</th> 
-			      	    <th>Nombre</th> 
-			      	    <th>Email</th> 
-				  	    <th>Dni</th>
-						<th>Telefono</th>
-				  	</tr>
-				  	<tr> 
-				  	  	<td>".$row['id_cliente']."</td> 
-				  	    <td>".$row['nombre']."</td> 
-				  	    <td>".$row['email']."</td>
-				  	    <td>".$row['dni']."</td> 
-				  	    <td>".$row['telefono']."</td> 
-				  	     
-				  	</tr>
-
-					<tr>
-						<td colspan='6'>
-							<button type='button' class='btn btn-default'>
-							    <span class='glyphicon glyphicon-print'></span> Exportar A Pdf
-							</button>
-						</td>
-					</tr>
+						<tr>
+							<td colspan='6'>
+								<button type='button' class='btn btn-default' action='ReporteCliente.php'>
+								    <span class='glyphicon glyphicon-print'></span> Exportar A Pdf
+								</button>
+							</td>
+						</tr>
 					</table> ";
 				}
 			}
@@ -97,38 +96,38 @@
 				//Resultados de MySql
 				//--------------------------------------------------------------------------------
 				echo "
-				<table class='table table-hover'> 
+				
+					<table class='table table-hover' aling='center' width='700'>
 
-					<tr>
-						<td colspan='6'> <img src='img/Inkafarma_logo.png'> </td>
-					</tr>
+						<tr>
+							<td colspan='6'> <img src='img/Inkafarma_logo.png'> </td>
+						</tr>
 
-			      	<tr class='success' > 
-			      	    <th> Codigo </th> 
-			      	    <th> Nombre </th> 
-			      	    <th> Apellidos </th> 
-				  	    <th> Dni </th>
-						<th> Telefono </th>
-				  	    <th> Direccion </th>
-				  	</tr>
-				  	<tr> 
-				  	  	<td>".$row['id_cliente']."</td> 
-				  	    <td>".$row['nombre']."</td> 
-				  	    <td>".$row['apellidos']."</td>
-				  	    <td>".$row['dni']."</td> 
-				  	    <td>".$row['telefono']."</td> 
-				  	    <td>".$row['direccion']."</td> 
-				  	</tr>
+				      	<tr class='success' aling='center'> 
+				      	    <th> Codigo </th> 
+				      	    <th> Nombre </th> 
+				      	    <th> Apellidos </th> 
+					  	    <th> Dni </th>
+							<th> Telefono </th>
+					  	    <th> Direccion </th>
+					  	</tr>
+					  	<tr> 
+					  	  	<td>".$row['id_cliente']."</td> 
+					  	    <td>".$row['nombre']."</td> 
+					  	    <td>".$row['apellidos']."</td>
+					  	    <td>".$row['dni']."</td> 
+					  	    <td>".$row['telefono']."</td> 
+					  	    <td>".$row['direccion']."</td> 
+					  	</tr>
 
-				  	<tr>
-						<td colspan='6'>
-							<button type='button' class='btn btn-default'>
-							    <span class='glyphicon glyphicon-print'></span> Exportar A Pdf
-							</button>
-						</td>
-					</tr>
-
-				</table> ";
+					  	<tr>
+							<td colspan='6'>
+								<button type='button' class='btn btn-default' action='ReporteCliente.php'>
+								    <span class='glyphicon glyphicon-print'></span> Exportar A Pdf
+								</button>
+							</td>
+						</tr>
+					</table>  ";
 			}
 		}
 	}
